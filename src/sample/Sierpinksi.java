@@ -18,12 +18,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Sierpinksi {
-    private final int SCREEN_WIDTH = 800;
-    private final int SCREEN_HEIGHT = 800;
+    private final int SCREEN_WIDTH = 750;
+    private final int SCREEN_HEIGHT = 750;
     private final Color BACKGROUND_COLOR = Color.WHITESMOKE;
 
-    private int CELL_LEN = 1;
-    private int BOARD_WIDTH = 700;
+    private int CELL_LEN = 2;
+    private int BOARD_WIDTH = 300;
 
     private Stage stage;
     private Pane root;
@@ -60,7 +60,7 @@ public class Sierpinksi {
         triangle = new int[BOARD_WIDTH][BOARD_WIDTH];
         mod = 2;
 
-        Text t = new Text(10, 780, "Hit enter to adjust settings");
+        Text t = new Text(10, 780, "Select from the dropdown menu to change the modulus of Pascal's triangle");
         root.getChildren().add(t);
 
         final ComboBox comboBox = new ComboBox(options);
