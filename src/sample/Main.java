@@ -58,6 +58,12 @@ public class Main extends Application {
             }
         });
 
+        Text t1 = new Text(10, 20, "Press 'f' to see the Fibonacci spiral");
+        root.getChildren().add(t1);
+
+        Text t2 = new Text(10, 40, "Press 's' to see the Sierpinski triangles");
+        root.getChildren().add(t2);
+
         primaryStage.setTitle("Math Visualizations");
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
