@@ -18,8 +18,8 @@ import java.io.FileNotFoundException;
 
 public class Main extends Application {
 
-    private final int SCREEN_WIDTH = 800;
-    private final int SCREEN_HEIGHT = 800;
+    private final int SCREEN_WIDTH = 750;
+    private final int SCREEN_HEIGHT = 750;
     private final int FONT_SIZE = 30;
     private final String FONT_NAME = "verdana";
     private final Color BACKGROUND_COLOR = Color.WHITESMOKE;
@@ -45,14 +45,20 @@ public class Main extends Application {
                 if (pressed == KeyCode.Q) {
                     QuitGame(root);
                 }
-                else if (pressed == KeyCode.ENTER) {
+                else if (pressed == KeyCode.S) {
                     Sierpinksi spt = new Sierpinksi(primaryStage);
-//                    spt.show();
+                }
+                else if (pressed == KeyCode.F) {
+                    try {
+                        Fibonacci fib = new Fibonacci(primaryStage);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         });
 
-        primaryStage.setTitle("Sierpinski's Triangles");
+        primaryStage.setTitle("Math Visualizations");
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
         primaryStage.show();

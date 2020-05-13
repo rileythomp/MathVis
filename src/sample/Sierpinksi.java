@@ -35,8 +35,9 @@ public class Sierpinksi {
             "Modulus 4",
             "Modulus 5",
             "Modulus 6",
-            "Modulus 7"
-    );
+            "Modulus 7",
+            "Modulus 8"
+            );
 
     private int[][] triangle;
     private int mod;
@@ -51,16 +52,18 @@ public class Sierpinksi {
             put(4, Color.LIGHTGREEN);
             put(5, Color.GOLD);
             put(6, Color.MEDIUMPURPLE);
+            put(7, Color.TURQUOISE);
         }
     };
 
     public Sierpinksi(Stage s) {
         stage = s;
+        stage.setTitle("Sierpinksi Triangles");
         root = new Pane();
         triangle = new int[BOARD_WIDTH][BOARD_WIDTH];
         mod = 2;
 
-        Text t = new Text(10, 780, "Select from the dropdown menu to change the modulus of Pascal's triangle");
+        Text t = new Text(10, 730, "Select from the dropdown menu to change the modulus of Pascal's triangle");
         root.getChildren().add(t);
 
         final ComboBox comboBox = new ComboBox(options);
