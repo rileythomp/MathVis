@@ -1,6 +1,6 @@
-# Sierpinski
+# Math Visualizations
 
-Sierpinski triangles from Pascal's triangle modulo integers
+Some math visualizations such as Sierpinki's triangle and Fibonacci's spiral.
 
 ![sierpinski](sierpinskisc.png)
 
