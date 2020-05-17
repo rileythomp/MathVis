@@ -55,6 +55,9 @@ public class Main extends Application {
                         e.printStackTrace();
                     }
                 }
+                else if (pressed == KeyCode.L) {
+                    LineArt la = new LineArt(primaryStage);
+                }
             }
         });
 
@@ -63,6 +66,9 @@ public class Main extends Application {
 
         Text t2 = new Text(10, 40, "Press 's' to see the Sierpinski triangles");
         root.getChildren().add(t2);
+
+        Text t3 = new Text(10, 60, "Press 'l' to see the line art");
+        root.getChildren().add(t3);
 
         primaryStage.setTitle("Math Visualizations");
         primaryStage.setScene(scene);
