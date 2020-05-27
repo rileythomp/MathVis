@@ -6,5 +6,7 @@ Some math visualizations such as Sierpinki's triangle and Fibonacci's spiral.
 
 ![lineart](lineart.png)
 
+![calcpi](screenshot.png)
+
 ![fibonacci](fibsc.png)
 
